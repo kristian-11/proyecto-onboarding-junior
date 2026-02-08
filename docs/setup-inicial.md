@@ -34,3 +34,8 @@ Paso,Concepto,Explicación
 12,Variables CSS (:root),Guardar colores en un solo lugar para cambiarlos fácilmente en todo el proyecto.
 13,Flexbox Básico,Usar display: flex para alinear el logo y el menú de forma profesional.
 14,Semántica HTML,"Usar <header>, <nav> y <section> para que Google y los lectores de pantalla entiendan la web."
+
+Concepto,Explicación
+CSS Grid,Sistema de diseño basado en filas y columnas. Es ideal para layouts generales de la página.
+Box Shadow,"Propiedad para dar profundidad. Hace que los elementos parezcan estar ""encima"" del fondo."
+Transitions,Permiten que cambios (como el movimiento al pasar el mouse) sean suaves y no bruscos.

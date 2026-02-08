@@ -1,79 +1,127 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
-    line-height: 1.6;
-    padding: 20px;
+  font-family: sans-serif;
+  line-height: 1.6;
+  padding: 20px;
 }
 
 /* VARIABLES: La forma profesional de gestionar colores */
 :root {
-    --primary-color: #1e293b; /* Azul grisáceo oscuro */
-    --accent-color: #3b82f6;  /* Azul brillante para acciones */
-    --text-light: #f8fafc;    /* Blanco suave */
-    --bg-light: #f1f5f9;      /* Fondo gris muy claro */
+  --primary-color: #1e293b; /* Azul grisáceo oscuro */
+  --accent-color: #3b82f6; /* Azul brillante para acciones */
+  --text-light: #f8fafc; /* Blanco suave */
+  --bg-light: #f1f5f9; /* Fondo gris muy claro */
 }
 
 /* HEADER: Usamos Flexbox para separar el logo del menú */
 .main-header {
-    background-color: var(--primary-color);
-    color: var(--text-light);
-    display: flex;
-    justify-content: space-between; /* Empuja logo a la izquierda y nav a la derecha */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 1rem 5%; /* 5% de margen lateral para que respire */
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  display: flex;
+  justify-content: space-between; /* Empuja logo a la izquierda y nav a la derecha */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 1rem 5%; /* 5% de margen lateral para que respire */
 }
 
 .main-header ul {
-    display: flex;
-    list-style: none; /* Quita los puntos de la lista */
-    gap: 20px; /* Separa los enlaces entre sí */
+  display: flex;
+  list-style: none; /* Quita los puntos de la lista */
+  gap: 20px; /* Separa los enlaces entre sí */
 }
 
 .main-header a {
-    color: var(--text-light);
-    text-decoration: none; /* Quita el subrayado azul clásico */
-    font-weight: 500;
+  color: var(--text-light);
+  text-decoration: none; /* Quita el subrayado azul clásico */
+  font-weight: 500;
 }
 
 /* HERO SECTION: El centro de atención */
 .hero {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: var(--bg-light);
+  text-align: center;
+  padding: 100px 20px;
+  background-color: var(--bg-light);
 }
 
 .hero h1 {
-    font-size: 2.8rem; /* Tamaño grande para jerarquía visual */
-    color: var(--primary-color);
-    margin-bottom: 20px;
+  font-size: 2.8rem; /* Tamaño grande para jerarquía visual */
+  color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto; /* Centra el bloque de texto */
-    color: #64748b;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto; /* Centra el bloque de texto */
+  color: #64748b;
 }
 
 /* BOTÓN: Un elemento interactivo claro */
 .btn-primary {
-    background-color: var(--accent-color);
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 30px;
-    transition: background 0.3s; /* Animación suave al pasar el mouse */
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 30px;
+  transition: background 0.3s; /* Animación suave al pasar el mouse */
 }
 
 .btn-primary:hover {
-    background-color: #2563eb; /* Un azul un poco más oscuro al pasar el mouse */
+  background-color: #2563eb; /* Un azul un poco más oscuro al pasar el mouse */
+}
+
+/* SECCIÓN CARACTERÍSTICAS */
+.features {
+  background-color: #f8fafc; /* Un gris casi blanco para que la tarjeta resalte */
+  padding: 80px 5%;
+  text-align: center;
+}
+.features h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
+/* El contenedor Grid */
+.features-grid {
+  display: grid;
+  /* crea 3 columnas de igual tamaño */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* Espacio entre las tarjetas */
+}
+
+/* Estulo de las Tarjertas */
+.card {
+  background-color: #ffffff; /* Blanco puro */
+  padding: 40px 30px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0; /* Un borde sutil para definir el límite */
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: var(--accent-color); /* El borde cambia al azul de tu marca */
+}
+.card h3 {
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #4b5563;
+  line-height: 1.5;
 }
