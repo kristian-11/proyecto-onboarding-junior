@@ -9,3 +9,71 @@ body {
     line-height: 1.6;
     padding: 20px;
 }
+
+/* VARIABLES: La forma profesional de gestionar colores */
+:root {
+    --primary-color: #1e293b; /* Azul grisáceo oscuro */
+    --accent-color: #3b82f6;  /* Azul brillante para acciones */
+    --text-light: #f8fafc;    /* Blanco suave */
+    --bg-light: #f1f5f9;      /* Fondo gris muy claro */
+}
+
+/* HEADER: Usamos Flexbox para separar el logo del menú */
+.main-header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-between; /* Empuja logo a la izquierda y nav a la derecha */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 1rem 5%; /* 5% de margen lateral para que respire */
+}
+
+.main-header ul {
+    display: flex;
+    list-style: none; /* Quita los puntos de la lista */
+    gap: 20px; /* Separa los enlaces entre sí */
+}
+
+.main-header a {
+    color: var(--text-light);
+    text-decoration: none; /* Quita el subrayado azul clásico */
+    font-weight: 500;
+}
+
+/* HERO SECTION: El centro de atención */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--bg-light);
+}
+
+.hero h1 {
+    font-size: 2.8rem; /* Tamaño grande para jerarquía visual */
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto; /* Centra el bloque de texto */
+    color: #64748b;
+}
+
+/* BOTÓN: Un elemento interactivo claro */
+.btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: background 0.3s; /* Animación suave al pasar el mouse */
+}
+
+.btn-primary:hover {
+    background-color: #2563eb; /* Un azul un poco más oscuro al pasar el mouse */
+}
