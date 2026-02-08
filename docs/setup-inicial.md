@@ -39,3 +39,5 @@ Concepto,Explicación
 CSS Grid,Sistema de diseño basado en filas y columnas. Es ideal para layouts generales de la página.
 Box Shadow,"Propiedad para dar profundidad. Hace que los elementos parezcan estar ""encima"" del fondo."
 Transitions,Permiten que cambios (como el movimiento al pasar el mouse) sean suaves y no bruscos.
+
+Lección del día: El contraste es clave. Nunca pongas un elemento blanco sobre un fondo blanco si quieres que el usuario entienda que es una tarjeta independiente. La sombra (box-shadow) y el borde (border) son las herramientas del desarrollador para dar "volumen" a la web.
