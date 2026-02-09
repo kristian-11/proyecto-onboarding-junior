@@ -104,15 +104,13 @@ body {
   padding: 40px 30px;
   border-radius: 12px;
   border: 1px solid #e2e8f0; /* Un borde sutil para definir el límite */
-  box-shadow:
-    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
 }
 .card:hover {
   transform: translateY(-10px);
-  box-shadow:
-    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   border-color: var(--accent-color); /* El borde cambia al azul de tu marca */
 }
@@ -124,4 +122,39 @@ body {
 .card p {
   color: #4b5563;
   line-height: 1.5;
+}
+
+/* FOOTER */
+.main-footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 0.2rem 5%;
+  margin-top: 20px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .main-header {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
